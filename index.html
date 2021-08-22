@@ -1,0 +1,435 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 		<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+ 		<title>Klimatfaktum.se</title>
+ 		<meta name="description" content="Fakta om sverige och klimatpåverkan">
+ 		<meta name="author" content="Mikael Ganehag Brorsson">
+
+ 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ 		<script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+		<style>
+		body {
+			font-family: 'Open Sans', sans-serif;
+		}
+		.bg-cyan {
+			background: #0dcaf0;	
+		}
+		.bg-teal {
+			background: #20c997;
+		}
+		.bg-purple {
+			background: #6f42c1;
+		}
+		hr {
+			width: 10%;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: 600;
+		}
+		ol, ul {
+			list-style-position: inside;
+			padding-left: 0;
+		}
+		mark {
+			font-style: italic;
+		}
+		</style>
+
+	</head>
+	<body>
+		<main>
+			<header>
+				<div class="pb-3 mb-4 container-fluid py-3">
+					<div class="d-flex align-items-center flex-row container">
+						<img src="assets/swe-flag-circle.svg" height="32px" class="me-3"/>
+						<span class="d-flex align-items-center text-dark text-decoration-none">
+							<h4 class="mb-0">Intressant fakta om Sveriges klimatpåverkan</h4>
+						</span>
+
+						<!--
+						<nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+							<a class="py-2 text-dark text-decoration-none" href="#references">Referenser</a>
+						</nav>
+						-->
+					</div>
+				</div>
+			</header>
+
+			<div class="container mt-3">
+				<div class="row">
+					<div class="offset-lg-3 col-lg-6 offset-md-2 col-md-8 offset-sm-1 col-sm-10">
+						<figure class="my-5 text-center">
+							<blockquote class="blockquote">
+								<p>För att Sverige ska leva upp till Parisavtalet har riksdagen beslutat om etappmål för minskning av Sveriges klimatpåverkan. Senast år 2045 ska Sverige inte ha några nettoutsläpp av växthusgaser till atmosfären, för att därefter uppnå negativa utsläpp.</p>
+							</blockquote>
+							<figcaption class="blockquote-footer mt-2">
+								Sveriges regering (2017) <a href="https://www.regeringen.se/regeringens-politik/miljo-och-klimat/mal-for-miljo/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			<section class="container mt-3">
+				<h3 class="mb-3">Sveriges miljömål</h3>
+
+				<div class="card border-0">
+					<div class="card-body p-0 mb-5">
+						<div class="">
+							<h4 class="card-title">Koldioxidekvivalenta utsläpp [1]</h4>
+
+							<div class="d-flex mb-3 align-items-center">
+								<div class="p-1 bg-secondary rounded text-light" style="width: 85%;">
+									<small><strong class="ms-1">1990 Utfall</strong></small>
+								</div>
+								<div class="ms-2">
+									<small><strong>71 Mt</strong></small>
+								</div>
+							</div>
+
+							<div class="d-flex mb-3 align-items-center">
+								<div class="p-1 bg-warning rounded text-light" style="width: 70%;">
+									<small><strong class="ms-1">2019 Utfall</strong></small>
+								</div>
+								<div class="ms-2">
+									<small><strong>51 Mt (endast 29% reduktion)</strong></small>
+								</div>
+							</div>
+
+							<div class="d-flex mb-3 align-items-center">
+								<div class="p-1 bg-primary rounded text-light" style="width: 55%;">
+									<small><strong class="ms-1">2020 Etappmål</strong></small>
+								</div>
+								<div class="ms-2">
+									<small><strong>40% reduktion (43 Mt)</strong></small>
+								</div>
+							</div>
+
+							<div class="d-flex mb-3 align-items-center">
+								<div class="p-1 bg-cyan rounded text-light" style="width: 33%;">
+									<small><strong class="ms-1">2030 Etappmål</strong></small>
+								</div>
+								<div class="ms-2">
+									<small><strong>63% reduktion (26 Mt)</strong></small>
+								</div>
+							</div>
+
+							<div class="d-flex mb-3 align-items-center">
+								<div class="p-1 bg-teal rounded text-light" style="width: 22%;">
+									<small><strong class="ms-1">2040 Etappmål</strong></small>
+								</div>
+								<div class="ms-2">
+									<small><strong>75% reduktion (18 Mt)</strong></small>
+								</div>
+							</div>
+
+							<div class="d-flex mb-1 align-items-center">
+								<div class="p-1 bg-success rounded text-light" style="width: 14%;">
+									<small><strong class="ms-1">2045</strong></small>
+								</div>
+								<div class="ms-2">
+									<small><strong>85% reduktion (10 Mt)</strong></small>
+								</div>
+							</div>
+						</div>
+
+						<ol class="small mt-4 ms-0">
+							<li>
+								<a href="https://www.naturvardsverket.se/Miljoarbete-i-samhallet/Miljoarbete-i-Sverige/Uppdelat-efter-omrade/Klimat/Sveriges-klimatlag-och-klimatpolitiska-ramverk">
+									Naturvårdsverket: Sveriges klimatmål och klimatpolitiska ramverk
+								</a>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+
+			<hr class="mx-auto mb-5">
+
+			<section class="container mt-2">
+				<h3 class="mb-3">Ordförklaring</h3>
+
+				<div class="row gx-5">
+					<div class="col-lg-3">
+						<div class="card border-0 mb-5">
+							<div class="card-body p-0">
+								<h4 class="card-title">Territoriella utsläpp</h4>
+								<p class="card-text">
+									Utsläpp som sker inom rikets gränser. Det är dessa utsläpp som länder förhåller sig till och innefatter inte utsläpp som sker i andra länder som en följd av medborgares konsumtion.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3">
+						<div class="card border-0 mb-5">
+							<div class="card-body p-0">
+								<h4 class="card-title">Konsumtionsbaserade utsläpp</h4>
+								<p class="card-text">
+									Innefattar utsläpp som sker både inom och utanför landet som en följd av konsumtion. När vi köper elektronik, möbler, fordon och livsmedel som inte är producerade inom landets gränser orsakar vi genom konsumtion ett utsläpp som sker i ett annat land.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3">
+						<div class="card border-0 mb-5">
+							<div class="card-body p-0">
+								<h4 class="card-title">Koldioxidekvivalent / CO<sub>2</sub>-ekv.</h4>
+								<p class="card-text">
+									Koldioxid är inte den enda växthusgasen. Metangas (CH<sub>4</sub>) och Lustgas (N<sub>2</sub>O) är två andra gaser som har ännu större påverkan på klimatet. Metangas har mer än <mark>80 ggr</mark> så stor värmingseffekt som koldioxid, medans Lustgas har mer än <mark>300 ggr</mark> så stor värmningseffekt. För att enklare visa en enhetlig siffra räknas dessa gasers påverkan om till en ekvivalent mängd koldioxid.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3">
+						<div class="card border-0 mb-5">
+							<div class="card-body p-0">
+								<h4 class="card-title">Mt</h4>
+								<p class="card-text">
+									En förkortning av miljoner ton.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<hr class="mx-auto mb-5">
+
+			<section class="container mt-2">
+				<h3 class="mb-1">Globalt</h3>
+				<h4 class="mb-3 text-muted">51 Mt territoriella CO<sub>2</sub>-ekv. 2019</h4>
+
+				<div class="row gx-5">
+					<div class="col-lg-3">
+						<div class="card border-0 mb-5">
+							<div class="card-body p-0">
+								<h4 class="card-title">En del av det hela</h4>
+								<p class="card-text">
+									Värdens totala utsläpp av koldioxid för 2019 var <mark>38 016,57 Mt CO<sub>2</sub></mark>. EU + Storbritannien står för <mark>3 303,97 Mt CO<sub>2</sub></mark> eller 8,69 % av världens totala utsläpp. Sverige i sin tur står för <mark>44,7 Mt CO<sub>2</sub></mark><sup>&dagger;</sup>, vilket är 0,12 % av världens totala CO<sub>2</sub> utsläpp. [1]
+								</p>
+								<p class="card-text">
+									
+								</p>
+								<p class="card-text">
+									Med världens 7,678 miljarder människor (2019) har varje människa ett CO<sub>2</sub> utsläpp på i <mark>snitt 0,20 ton</mark>. Sverige med våra 10,26 miljoner innevånare (2019) har ett utsläpssnitt på <mark>4,37 ton CO<sub>2</sub></mark>. Detta är ungefär <mark>22 ggr så mycket som världssnittet</mark>.
+								</p>
+								<ul class="small mt-4 ms-0 list-unstyled">
+									<li>
+										&dagger; Denna siffra skiljer sig från Sveriges faktiska <mark>51 Mt CO<sub>2</sub>-ekv.</mark> då data från EDGAR representerar koldioxidutsläpp och inte koldioxidekvivalenta utsläpp. 
+									</li>
+								</ul>
+								<ol class="small mt-3 ms-0">
+									<li>
+										<a href="https://edgar.jrc.ec.europa.eu/report_2020">Emissions Database for Global Atmospheric Research (EDGAR)</a>
+									</li>
+								</ol>
+							</div>
+						</div>
+						
+						
+					</div>
+
+					<div class="col-lg-3">
+						<div class="card border-0 mb-5">
+							<div class="card-body p-0">
+								<h4 class="card-title">Svensk import</h4>
+								<p class="card-text">
+									<mark>Över 80 procent</mark> av importen till Sverige kommer från länder i Europa. Framför allt importerar vi mycket från Tyskland som är vår största handelspartner [1].
+								</p>
+								<small>
+									[1] <a href="https://www.naturvardsverket.se/Sa-mar-miljon/Statistik-A-O/Vaxthusgaser-konsumtionsbaserade-utslapp-Sverige-och-andra-lander/">Naturvårdsverket</a>
+								</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3">
+						<div class="card border-0 mb-5">
+							<div class="card-body p-0">
+								<h4 class="card-title">Konsumtionsbaserade utsläpp</h4>
+								<p class="card-text">
+									Sveriges konsumtionsbaserade växthusgasutsläppen för 2018 är <mark>82 Mt</mark>.
+								</p>
+
+								<div class="d-flex my-5">
+									<img src="assets/charts/konsumtionsbaserade-utslapp.svg" class="w-75 mx-auto" alt="Sveriges konsumtionsbaserade utsläpp 2018" style="max-height: 250px;">
+								</div>
+
+								<p class="card-text">
+									<mark>35,38 Mt</mark> uppstår inom rikets gränser. Medans <mark>46,66 Mt</mark> uppstår i andra länder till följd av svensk konsumtion. [1]
+								</p>
+
+								<small>
+									[1] <a href="https://www.naturvardsverket.se/Sa-mar-miljon/Statistik-A-O/Vaxthusgaser-konsumtionsbaserade-utslapp-Sverige-och-andra-lander/">Naturvårdsverket</a>
+								</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3">
+						<div class="card border-0 mb-5">
+							<div class="card-body p-0">
+								<h4 class="card-title">Flygets klimatpåverkan</h4>
+								<p class="card-text">
+									I Sverige har antalet utrikes flygresor per invånare mer än <mark>fördubblats sedan början av 1990-talet.</mark><br>
+									Svenska befolkningens totala klimatpåverkan från flyget står för för lika stora utsläpp som hela personbilstrafiken i Sverige (10 Mt CO<sub>2</sub>) [1].
+								</p>
+
+								<p class="card-text">
+									I Sverige flyger vi mer än <mark>fem gånger</mark> så mycket som det globala genomsnittet. Av utsläppen står tjänsteresorna för ca 1/5 och privatresorna för ca 4/5 [3].
+								</p>
+
+								<ol class="small mt-4 ms-0">
+									<li>
+										 <a href="https://www.naturvardsverket.se/Sa-mar-miljon/Statistik-A-O/Vaxthusgaser-territoriella-utslapp-och-upptag/" target="_blank">Naturvårdsverket: Växthusgaser territoriella utsläpp och upptag</a>
+									</li>
+									<li>
+										<a href="https://www.naturvardsverket.se/Sa-mar-miljon/Klimat-och-luft/Klimat/Tre-satt-att-berakna-klimatpaverkande-utslapp/Flygets-klimatpaverkan/" target="_blank">Naturvårdsverket: Flygets klimatpaverkan</a>
+									</li>
+									<li>
+										<a href="https://research.chalmers.se/publication/506796/file/506796_Fulltext.pdf" target="_blank">Chalmers: Klimatpåverkan från svenska befolkningens flygresor 1990 - 2017, sid 18.</a>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<hr class="mx-auto mb-5">
+
+			<section class="container mt-2">
+				<h3 class="mb-1">Svensk industri</h3>
+				<h4 class="mb-3 text-muted">16 Mt territoriella CO<sub>2</sub>-ekv. (32 %), 2019</h4>
+
+				<div class="row gx-5">
+					<div class="col-lg-3">
+						<div class="card border-0 mb-5">
+							<div class="card-body p-0">
+								<h4 id="sveriges-territoriella-utslapp-2019" class="card-title">Sveriges territoriella utsläpp 2019</h4>
+							</div>
+							<img src="assets/treemap-totalen.svg" class="px-1 mb-1" alt="Sveriges territoriella utsläpp 2019">
+							<div class="card-body p-0">
+								<p class="card-text">
+									Sveriges långsiktiga klimatmål innebär att utsläppen av växthusgaser inom Sveriges gränser ska nå netto-noll senast år 2045. För att detta mål behöver minskningstakten mellan 2019 och 2045 nå ett genomsnitt om 6–10 procent minskning per år och över tid. [1]
+								</p>
+
+								<small>
+									[1] <a href="https://www.naturvardsverket.se/Sa-mar-miljon/Statistik-A-O/Vaxthusgaser-territoriella-utslapp-och-upptag/">Naturvårdsverket</a>
+								</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="card border-0 mb-5">
+							<div class="card-body p-0">
+								A
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="card border-0 mb-5">
+							<div class="card-body p-0">
+								A
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<hr class="mx-auto mb-5">
+
+			<section class="container mt-2">
+				<h3 class="mb-1">Inrikes transport</h3>
+				<h4 class="mb-3 text-muted">16 Mt territoriella CO<sub>2</sub>-ekv. (32 %), 2019</h4>
+
+				<div class="col-lg-3">
+					<div class="card border-0 mb-5">
+						<div class="card-body p-0">
+							<h4 class="card-title">Personbilar</h4>
+							<p class="card-text">
+								Det finns <mark>4 887 904</mark> personbilar i trafik 2019 [1].
+								
+							</p>
+
+							<p class="card-text">
+								<mark>1 171 mil</mark> körde en personbil i genomsnitt under 2019 [2].
+							</p>
+							<small>
+								[1] <a href="https://www.trafa.se/globalassets/statistik/vagtrafik/fordon/2020/fordon_2019.pdf">Trafa: Fordon 2019</a><br>
+								[2] <a href="https://www.trafa.se/globalassets/statistik/vagtrafik/korstrackor/2020/korstrackor_2019_statistikblad_sept.pdf">Trafa: Körsträckor 2019</a><br>
+								[3] <a href="https://www.trafa.se/globalassets/statistik/resvanor/2019/resvanor-i-sverige-2019.pdf">Trafa: Resvanor i Sverige 2019</a>
+							</small>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<hr class="mx-auto mb-5">
+
+			<section class="container mt-2">
+				<h3 class="mb-3">Svenskt jordbruk</h3>
+
+			</section>
+
+			<hr class="mx-auto mb-5">
+
+			<section class="container mt-2">
+				<h3 class="mb-3">Sveriges el- och fjärrvärme</h3>
+
+			</section>
+
+			<hr class="mx-auto mb-5">
+
+			<section class="container mt-2">
+				<h3 class="mb-3">Svenska arbetsmaskiner</h3>
+			</section>
+
+			<hr class="mx-auto mb-5">
+
+			<section class="container mt-2">
+				<h3 class="mb-3">Övrigt</h3>
+			</section>
+
+			<hr class="mx-auto mb-5">
+
+			<section class="container mt-2">
+				<h3 class="mb-3">Individens påverkan</h3>
+
+				<div class="col-lg-3">
+					<div class="card border-0 mb-3">
+						<div class="card-body p-0 mb-5">
+							<h4 class="card-title">Konsumtionsbaserade växthusgasutsläppen</h4>
+							<p class="card-text">
+								De konsumtionsbaserade växthusgasutsläppen för den svenska befolkningen är cirka <mark>8 ton</mark> per person och år.
+							</p>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+		</main>
+		<script>
+
+		</script>
+	</body>
+</html>
